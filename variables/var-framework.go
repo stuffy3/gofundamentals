@@ -27,7 +27,9 @@ func main() {
 		fmt.Println("Module plus clip equals", total)
 	}
 
-	var ptr *string = &course
+	var ptr *string = &course // pointers store the variable address of other variables, the asterisk is what says 
+	//its a pointer and when used gives the value of the pointer not the address
+	//putting & in from will return the variables address 
 	fmt.Println("point course variable at address," ,ptr, "which holds this value,", *ptr)
 
 }
