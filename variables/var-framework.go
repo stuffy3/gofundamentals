@@ -4,17 +4,18 @@ import (
 	"fmt"
 	"reflect"
 	"strconv"
+	"os"
 )
 
 
 func main() {
-	name := "Tanner"
+	name := os.Getenv("USERNAME")
 	course := "Go Fundamentals"
 	module := "4"
 	clip := 2
 	// courseComplete := false
 
-	fmt.Println("Name and course are  set to", name, "and", course, ".")
+	fmt.Println("Name and course are set to", name, "and", course, ".")
 	fmt.Println("Module and clip are set to", module, "and", clip, ".")
 	fmt.Println("name is of type", reflect.TypeOf(name))
 	fmt.Println("module is of type", reflect.TypeOf(module))
