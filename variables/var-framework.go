@@ -6,13 +6,14 @@ import (
 	"strconv"
 )
 
-var (
-	name = "Tanner"
-	course = "Go Fundamentals"
-	module = "4"
-	clip = 2
-)
+
 func main() {
+	name := "Tanner"
+	course := "Go Fundamentals"
+	module := "4"
+	clip := 2
+	// courseComplete := false
+
 	fmt.Println("Name and course are  set to", name, "and", course, ".")
 	fmt.Println("Module and clip are set to", module, "and", clip, ".")
 	fmt.Println("name is of type", reflect.TypeOf(name))
@@ -25,4 +26,8 @@ func main() {
 		total := iModule + clip
 		fmt.Println("Module plus clip equals", total)
 	}
+
+	var ptr *string = &course
+	fmt.Println("point course variable at address," ,ptr, "which holds this value,", *ptr)
+
 }
